@@ -5,20 +5,29 @@ body {
 	font-family: poppins;
 	font-size: 16px;
 	color: #fff;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+    overflow: auto;
 }
+
+.container{
+	height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .form-box {
 	background-color: rgba(0, 0, 0, 0.5);
-	margin: auto auto;
 	padding: 40px;
 	border-radius: 5px;
 	box-shadow: 0 0 10px #000;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
 	width: 500px;
-	height: 730px; /* */
+	height: 730px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px;
 }
 .form-box:before {
 	background-image: url("https://i.postimg.cc/8cnYLpfc/ddddd.jpg");
@@ -98,14 +107,3 @@ body {
 span a {
 	color: #BBB;
 }
-
-@media (max-width: 600px) {
-	.form-box {
-	  position: absolute;
-	  display: flex;
-	  max-width: 150px;
-	  height: auto;
-	  padding: 20px;
-	}
-  }
-  
